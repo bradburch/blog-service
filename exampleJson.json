@@ -1,0 +1,9 @@
+{
+    "posts": [
+        {
+            "title": "My First Blog Post",
+            "summary": "The first blog post I've written on my blogging software!",
+            "post": "This is my first blog post content..."
+        }
+    ]
+}
