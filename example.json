@@ -2,8 +2,15 @@
     "posts": [
         {
             "title": "My First Blog Post",
+            "slug": "test",
             "summary": "The first blog post I've written on my blogging software!",
             "post": "This is my first blog post content..."
+        }, 
+        {
+            "title": "My Second Blog Post", 
+            "slug": "test2",
+            "summary": "Second!", 
+            "post": "Blah blah blah..."
         }
     ]
 }
