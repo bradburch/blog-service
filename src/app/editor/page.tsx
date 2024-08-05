@@ -1,6 +1,15 @@
-export default function Page() {
-    return (
-      <p>Hi!</p>
-    );
-  }
-  
+import { auth } from "@/../auth"
+ 
+export default async function UserAvatar() {
+  const session = await auth()
+
+  if (!session) return null
+ 
+  if (!session.user) return null
+ 
+  return (
+    <div>
+      <p>{session.user.name}</p>
+    </div>
+  )
+}
