@@ -1,6 +1,7 @@
 import { auth } from "@/../auth"
+import Link from 'next/link'
  
-export default async function UserAvatar() {
+export default async function Editor() {
   const session = await auth()
 
   if (!session) return null
@@ -9,7 +10,12 @@ export default async function UserAvatar() {
  
   return (
     <div>
-      <p>{session.user.name}</p>
+      <div>
+        <p>{session.user.name}</p>
+      </div>
+      <div>
+        <Link href="/editor/post">Post</Link>
+      </div>
     </div>
   )
 }
